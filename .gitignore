@@ -1,1 +1,26 @@
 #include <iostream>
+#define TRUE
+using namespace std;
+
+      // DECLERATIONS
+bool isEthylFreezing(int);
+bool isEthlyBoiling(int);
+void printingFinal(bool, bool);
+
+      // MAIN FUNCTION
+int main()
+{
+  int temp;
+  cout << "Enter Temperature" << endl;
+  cin >> temp;
+  
+  bool test1 = isEthylBoiling(temp);
+  bool test2 = isEthylFreezing(temp);
+  
+  printingFinal(test1, test2);
+  
+return 0;
+}
+
+      // MEMBER FUNCTIONS
+void printingFinal()
